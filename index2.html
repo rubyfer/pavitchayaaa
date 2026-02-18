@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font (เปลี่ยนฟอนต์ได้ตรงนี้) -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+
+    <!-- ===== Navbar ===== -->
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== Hero Section ===== -->
+    <section id="home" class="hero fade-in">
+        <img src="Screenshot_20260217_202417.jpg" alt="Profile" class="profile-img">
+        <h1>ปวิชญา ศุกเกษม</h1>
+        <p> Art | Graphic | 3D Designer</p>
+    </section>
+
+    <!-- ===== About Me ===== -->
+    <section id="about" class="about fade-in">
+        <h2>About Me</h2>
+        <p>
+          สวัสดีค่ะ ดิฉันเป็นนักศึกษาสาขาเทคโนโลยีสารสนเทศที่มีความสนใจด้านการออกแบบและงานสร้างสรรค์<br> ไม่ว่าจะเป็นงานกราฟิก 2D, 3D และโมชั่นกราฟิก 
+          มีความตั้งใจในการพัฒนาทักษะของตนเองอยู่เสมอ ชอบเรียนรู้สิ่งใหม่ ๆ <br>และให้ความสำคัญกับรายละเอียดของงาน เพื่อให้ผลงานออกมาสวยงามและตรงตามเป้าหมายมากที่สุด
+    
+        </p>
+    </section>
+
+    <!-- ===== Portfolio Section ===== -->
+    <section id="portfolio" class="portfolio fade-in">
+        <h2>My Works</h2>
+
+        <div class="portfolio-container">
+
+            <!-- การ์ดผลงาน 1 -->
+            <div class="card">
+                <h3>การแข่งขัน</h3>
+                <p>แข่งขันทักษะวิชาชีพ</p>
+                <img src="ช1.jpg" alt="Work 1">
+                <img src="ช2.jpg" alt="Work 2">
+                <img src="ช3.jpg" alt="Work 3">
+                <img src="สๅ.jpg" alt="Work 4">
+            </div>
+
+            <!-- การ์ดผลงาน 2 -->
+            <div class="card">
+                 <h3>กิจกรรม</h3>
+                <p>กิจกรรมที่เข้าร่วม</p>
+                <img src="FB_IMG_1771336607191.jpg" alt="Work 1">
+                <p>กิจกรรม OpenHouse EnTech </p>
+                <img src="FB_IMG_1771336841180.jpg" alt="Work 2">
+                <p>ศึกษาดูงานด้านเทคโนโลยีที่บริษัท dahua </p>
+                <img src="FB_IMG_1771336917041.jpg" alt="Work 3">
+                <p>กิจกรรมแข่งขันวิชาชีพ ระดับชาติ</p>
+                <img src="ไม่มีชื่อ 1713_20250531120657.png" alt="Work 4">
+                <p>ออกแบบเสื้อกีฬาสี</p>
+
+            </div>
+
+            <!-- การ์ดผลงาน 3 -->
+            <div class="card">
+               <h3>เกียรติบัตร</h3>
+                <p>certificate</p>
+                <img src="ลิ้ง_20251221_215821_978_45.jpg" alt="Work 1">
+                <img src="ลิ้ง_20251221_215822_086_32.jpg" alt="Work 2">
+                <img src="ลิ้ง_20251221_215822_358_69.jpg" alt="Work 3">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section id="contact" class="contact fade-in">
+        <h2>Contact</h2>
+        <a href="mailto:your@email.com" class="btn">Email Me</a>
+        <div class="social">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Behance</a>
+        </div>
+    </section>
+
+    <!-- Popup แสดงรายละเอียด -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
